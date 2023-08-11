@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+      <PackageReference Include="RestSharp" Version="110.2.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -69,6 +70,10 @@
       <_ContentIncludedByDefault Remove="wwwroot\AdminUI\css\alt\adminlte.plugins.css.map" />
       <_ContentIncludedByDefault Remove="wwwroot\AdminUI\css\alt\adminlte.plugins.min.css" />
       <_ContentIncludedByDefault Remove="wwwroot\AdminUI\css\alt\adminlte.plugins.min.css.map" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ETicaretWEBUI.Core\ETicaretWEBUI.Core.csproj" />
     </ItemGroup>
 
 </Project>

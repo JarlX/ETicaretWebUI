@@ -1,0 +1,12 @@
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/bin/Debug/net7.0/ETicaretWEBUI.Core.deps.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/bin/Debug/net7.0/ETicaretWEBUI.Core.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/bin/Debug/net7.0/ETicaretWEBUI.Core.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/refint/ETicaretWEBUI.Core.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ETicaretWEBUI.Core.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Core/obj/Debug/net7.0/ref/ETicaretWEBUI.Core.dll

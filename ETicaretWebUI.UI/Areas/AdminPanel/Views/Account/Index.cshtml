@@ -1,4 +1,4 @@
-@model dynamic
+@model ETicaretWEBUI.Core.DTO.LoginDTO
 
 @{
     Layout = null;
@@ -28,11 +28,21 @@
       <a href="/AdminUI/index2.html" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
+      @{
+        if (ViewData["LoginError"] != null)
+        {
+          <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+            <h5><i class="icon fas fa-ban"></i>Alert!</h5>
+            @ViewData["LoginError"]
+          </div>
+        }
+      }
       <p class="login-box-msg">Giriş Yapmak İçin Alanları Doldurunuz.</p>
 
-      <form action="/AdminUI/index3.html" method="post">
+      <form asp-action="AdminLogin" asp-controller="Account" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="User Name">
+          <input type="text" class="form-control" asp-for="UserName" placeholder="User Name">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -40,7 +50,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" asp-for="Password" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
