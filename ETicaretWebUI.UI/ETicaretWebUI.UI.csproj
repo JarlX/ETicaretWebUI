@@ -7,6 +7,8 @@
         <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
@@ -22,6 +24,7 @@
       <Folder Include="Areas\AdminPanel\Data\" />
       <Folder Include="Areas\AdminPanel\Models\" />
       <Folder Include="Areas\AdminPanel\Pages\" />
+      <Folder Include="Middleware\" />
       <Folder Include="wwwroot\AdminUI\" />
     </ItemGroup>
 

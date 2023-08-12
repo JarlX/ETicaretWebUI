@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{ADB37BE7-602C-4437-8DF8-D21504155D9C}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaretWebUI.UI/Middleware/GlobalExceptionMiddleware.cs">
+    <Files>
+      <File FileName="ETicaretWebUI.UI/Middleware/GlobalExceptionMiddleware.cs" Line="20" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ETicaretWebUI" expanded="True">
+            <Node name="ETicaretWebUI.UI">
+              <Node name="Middleware" expanded="True">
+                <Node name="GlobalExceptionMiddleware.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ETicaretWebUI.UI PreferredExecutionTarget="/Applications/Arc.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

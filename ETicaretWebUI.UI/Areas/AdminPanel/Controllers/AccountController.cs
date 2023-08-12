@@ -11,6 +11,13 @@ using RestSharp;
 [Area("AdminPanel")]
 public class AccountController : Controller
 {
+    private readonly IHttpContextAccessor _httpContextAccessor;
+
+    public AccountController(IHttpContextAccessor httpContextAccessor)
+    {
+        _httpContextAccessor = httpContextAccessor;
+    }
+
     [HttpGet("/Admin/Login")]
     public IActionResult Index()
     { 
@@ -33,7 +40,7 @@ public class AccountController : Controller
 
         var responseObject = JsonConvert.DeserializeObject<ApiResult<LoginDTO>>(responseString);
 
-        if (restResponse.StatusCode == HttpStatusCode.NotFound && responseObject.Data == null)
+        if (restResponse.StatusCode == HttpStatusCode.NotFound && responseObject?.Data.Token == null)
         {
             ViewData["LoginError"] = "Kullanıcı Adı Veya Şifre Yanlış.";
 
@@ -45,6 +52,8 @@ public class AccountController : Controller
             ViewData["LoginError"] = "Hata Oluştu";
             return View("Index");
         }
+
+        _httpContextAccessor.HttpContext.Session.SetString("User",responseObject?.Data.FullName);
 
         return RedirectToAction("Index", "Home");
     }
