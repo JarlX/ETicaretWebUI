@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ETicaretWebUI.UI.Areas.AdminPanel.Controllers
 {
     using ETicaretWEBUI.Core.ViewModel;
+    using ETicaretWEBUI.Helper.SessionHelper;
 
     [Area("AdminPanel")]
     public class HomeController : Controller
@@ -26,7 +27,13 @@ namespace ETicaretWebUI.UI.Areas.AdminPanel.Controllers
 
             UserViewModel userViewModel = new UserViewModel()
             {
-                FullName = _httpContextAccessor.HttpContext.Session.GetString("User")
+                FullName = SessionManager.LoggedUser.FullName,
+                
+                UserId = SessionManager.LoggedUser.UserId,
+                
+                Email = SessionManager.LoggedUser.Email,
+                
+                Address = SessionManager.LoggedUser.Address
 
             };
             

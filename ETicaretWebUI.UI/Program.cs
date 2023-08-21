@@ -1,3 +1,4 @@
+using ETicaretWEBUI.Helper;
 using ETicaretWebUI.UI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,5 +30,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+AppHttpContext.ServiceProvider = app.Services;
 
 app.Run();

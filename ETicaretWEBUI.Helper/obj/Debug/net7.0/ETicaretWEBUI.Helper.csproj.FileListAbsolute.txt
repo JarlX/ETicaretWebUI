@@ -1,0 +1,15 @@
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/bin/Debug/net7.0/ETicaretWEBUI.Helper.deps.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/bin/Debug/net7.0/ETicaretWEBUI.Helper.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/bin/Debug/net7.0/ETicaretWEBUI.Helper.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/bin/Debug/net7.0/ETicaretWEBUI.Core.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/bin/Debug/net7.0/ETicaretWEBUI.Core.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.csproj.CopyComplete
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/refint/ETicaretWEBUI.Helper.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ETicaretWEBUI.Helper.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretWebUI/ETicaretWebUI/ETicaretWEBUI.Helper/obj/Debug/net7.0/ref/ETicaretWEBUI.Helper.dll

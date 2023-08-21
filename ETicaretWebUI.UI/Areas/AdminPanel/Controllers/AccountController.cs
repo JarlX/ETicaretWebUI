@@ -5,6 +5,7 @@ namespace ETicaretWebUI.UI.Areas.AdminPanel.Controllers;
 using System.Net;
 using ETicaretWEBUI.Core.DTO;
 using ETicaretWEBUI.Core.Result;
+using ETicaretWEBUI.Helper.SessionHelper;
 using Newtonsoft.Json;
 using RestSharp;
 
@@ -52,8 +53,8 @@ public class AccountController : Controller
             ViewData["LoginError"] = "Hata Oluştu";
             return View("Index");
         }
-
-        _httpContextAccessor.HttpContext.Session.SetString("User",responseObject?.Data.FullName);
+        
+        SessionManager.LoggedUser = responseObject.Data;
 
         return RedirectToAction("Index", "Home");
     }
