@@ -12,9 +12,5 @@ public class SessionManager
         set => AppHttpContext.CurrentContext.Session.SetObject("LoginDTO", value);
     }
 
-    public static UserViewModel UserViewModel
-    {
-        get => AppHttpContext.CurrentContext.Session.GetObject<UserViewModel>("UserViewModel");
-        set => AppHttpContext.CurrentContext.Session.SetObject("UserViewModel", value);
-    }
+  
 }

@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{ADB37BE7-602C-4437-8DF8-D21504155D9C}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaretWebUI.UI/Middleware/GlobalExceptionMiddleware.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ETicaretWebUI.UI PreferredExecutionTarget="/Applications/Arc.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaretWebUI.UI/Middleware/SessionCheckMiddleware.cs">
     <Files>
       <File FileName="ETicaretWebUI.UI/Middleware/GlobalExceptionMiddleware.cs" Line="20" Column="38" />
+      <File FileName="ETicaretWebUI.UI/Middleware/SessionCheckMiddleware.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +16,7 @@
           <Node name="ETicaretWebUI" expanded="True">
             <Node name="ETicaretWebUI.UI">
               <Node name="Middleware" expanded="True">
-                <Node name="GlobalExceptionMiddleware.cs" selected="True" />
+                <Node name="SessionCheckMiddleware.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +24,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ETicaretWebUI.UI PreferredExecutionTarget="/Applications/Arc.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

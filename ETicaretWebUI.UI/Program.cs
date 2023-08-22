@@ -4,11 +4,13 @@ using ETicaretWebUI.UI.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null);
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
 
 var app = builder.Build();
+
+AppHttpContext.ServiceProvider = app.Services;
 
 app.GlobalExceptionMiddleware();
 // Configure the HTTP request pipeline.
@@ -31,6 +33,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-AppHttpContext.ServiceProvider = app.Services;
-
+app.SessionCheckMiddleware();
 app.Run();

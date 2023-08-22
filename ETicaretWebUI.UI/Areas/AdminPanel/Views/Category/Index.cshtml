@@ -1,0 +1,120 @@
+@model List<ETicaretWEBUI.Core.DTO.CategoryDTO>
+
+@{
+    ViewBag.Title = "Kategoriler";
+    Layout = "_Layout";
+}
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title ">Kategoriler</h3>
+    <div class="card-tools">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-lg">Kategori Ekle</button>
+    </div>
+  </div>
+  <div class="card-body">
+    <table id="tblKategoriler" class="table table-bordered">
+      <thead>
+      <tr>
+        <th style="width: 10px">#</th>
+        <th>Kategori</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      @{
+        var i = 0;
+        foreach (var item in Model)
+        {
+          i++;
+          <tr>
+            <td>@i</td>
+            <td>@item.CategoryName</td>
+            <td>
+              <button class="btn btn-primary btn-block">Güncelle</button>
+              <button class="btn btn-danger btn-block">Sil</button>
+            </td>
+          </tr>
+        }
+      }
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-lg" >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Yeni Kategori</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Kategori Adı</label>
+                    <input type="text" class="form-control" id="txtKategoriAd_Add" required->
+                  </div>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="btnKategoriAdd" >Kaydet</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+<script>
+$(function (){
+  $("#tblKategoriler").DataTable({
+  "responsive" : true,"lengthChange":false,"autoWidth":true,
+  "buttons":["copy","csv","excel","pdf","print","colvis"]
+  }).buttons().container().appendTo("#tblKategoriler_wrapper .col-md-6:eq(0)");
+  
+  $('#btnKategoriAdd').click(() => {
+    
+    let categoryDto = new Object();
+    categoryDto.CategoryName =  $('#txtKategoriAd_Add').val();
+    
+    $.ajax({
+     url:"/AddCategory",
+     type:"POST",
+     data:{ categoryDto },
+     success:(response)=>{
+         if (response.success)
+         {
+                  Swal.fire({
+                  position:"top-end",
+                  icon:"success",
+                  title:"Kategori Başarıyla Eklendi",
+                  showConfirmButton:false,
+                  timer:3000
+                  }).setTimeout(()=>{window.location.reload},3000);
+         }
+         else
+           {
+             let HataBilgisi = response.HataBilgisi;
+             let Hatalar = "";
+             for (var i = 0; i < HataBilgisi.Hata.length ; i ++){
+               Hatalar += HataBilgisi.Hata[i] + "</br>";
+             }
+             Swal.fire({
+             icon:"error",
+             title:HataBilgisi.HataAciklama,
+             html:Hatalar
+             })
+           }
+     },
+     error: (err) => {
+       console.log(err);
+     }
+    });
+  });
+})
+</script>

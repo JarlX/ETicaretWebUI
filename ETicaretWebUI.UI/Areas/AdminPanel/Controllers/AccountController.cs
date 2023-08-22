@@ -19,9 +19,10 @@ public class AccountController : Controller
         _httpContextAccessor = httpContextAccessor;
     }
 
-    [HttpGet("/Admin/Login")]
+    [HttpGet("/AdminAccount/Login")]
     public IActionResult Index()
     { 
+        _httpContextAccessor.HttpContext.Session.Clear();
         return View();
     }
 
